@@ -6,13 +6,20 @@
     <title>Bryan's Store</title>
     <link rel="icon" href="img/presupuesto.png" type="icon/png">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h2>Calculadora de Descuentos</h2>
-        <input type="number" id="monto" placeholder="Ingrese el monto de la compra">
-        <button onclick="calculadoraDescuento()">Calcular Descuento</button>
-        <button class="clear-btn" onclick="limpiarCampos()">Limpiar</button>
+        <h2><i class="fas fa-desktop"></i> Bryan's Store</h2>
+        <h3>Calculadora de Descuentos</h3>
+        <div class="input-group">
+            <i class="fas fa-dollar-sign"></i>
+            <input type="number" id="monto" placeholder="Ingrese el monto de la compra">
+        </div>
+        <div class="button-group">
+            <button onclick="calcularDescuento()"><i class="fas fa-calculator"></i> Calcular Descuento</button>
+            <button class="clear-btn" onclick="limpiarCampos()"><i class="fas fa-trash"></i> Limpiar</button>
+        </div>
         <h3 id="resultado"></h3>
     </div>
     <script src="js/index.js"></script>
